@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "312234424239",
+    "firebase_url": "https://stanthony-5213a.firebaseio.com",
+    "project_id": "stanthony-5213a",
+    "storage_bucket": "stanthony-5213a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:312234424239:android:c2cb08fca43c873f",
+        "android_client_info": {
+          "package_name": "com.grandilo.stanthony"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "312234424239-0bpkd45sdmgm568ep8vrkkl98tssfao4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.grandilo.stanthony",
+            "certificate_hash": "1c6d359a1020a3e3da0a950ccda406c56a7708c9"
+          }
+        },
+        {
+          "client_id": "312234424239-2n9jtm9nej2897k5c4tomqdvk9b853uk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQnrEa1GGCJflpwotTdODHoAyNd76HyKI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "312234424239-2n9jtm9nej2897k5c4tomqdvk9b853uk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
