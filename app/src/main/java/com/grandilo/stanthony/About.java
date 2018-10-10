@@ -16,6 +16,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
@@ -48,7 +49,7 @@ public class About extends AppCompatActivity {
 
     private void loadBackdrop() {
         final ImageView imageView = (ImageView) findViewById(R.id.backdrop);
-        Glide.with(this).load(Prayers.getRandomCheeseDrawable()).centerCrop().into(imageView);
+        Glide.with(this).load(Prayers.getRandomCheeseDrawable()).apply(new RequestOptions().placeholder(R.mipmap.ic_launcher).fitCenter()).into(imageView);
     }
 
 

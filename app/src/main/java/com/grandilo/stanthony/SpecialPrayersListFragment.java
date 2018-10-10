@@ -32,6 +32,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.grandilo.stanthony.db.DBAdapter;
 
 import java.util.ArrayList;
@@ -162,7 +163,7 @@ public class SpecialPrayersListFragment extends Fragment {
 
             Glide.with(holder.mImageView.getContext())
                     .load(Prayers.getRandomCheeseDrawable())
-                    .fitCenter()
+                    .apply(new RequestOptions().placeholder(R.mipmap.ic_launcher).fitCenter())
                     .into(holder.mImageView);
         }
 
