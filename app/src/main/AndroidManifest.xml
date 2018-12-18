@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.grandilo.stanthony" >
+    package="com.grandilo.stanthonyapp" >
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -14,7 +14,7 @@
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-9249562617917886~9341216058"/>
         <activity
-            android:name=".MainActivity"
+            android:name="com.grandilo.stanthonyapp.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,41 +22,41 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SpecialPrayerDetailActivity"
-            android:parentActivityName=".MainActivity" >
+            android:name="com.grandilo.stanthonyapp.SpecialPrayerDetailActivity"
+            android:parentActivityName="com.grandilo.stanthonyapp.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="com.grandilo.stanthonyapp.MainActivity" />
         </activity>
         <activity
-            android:name=".DevotionPrayerActivity"
+            android:name="com.grandilo.stanthonyapp.DevotionPrayerActivity"
             android:label="@string/title_activity_devotion_prayer"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName="com.grandilo.stanthonyapp.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.grandilo.stanthony.MainActivity" />
+                android:value="com.grandilo.stanthonyapp.MainActivity" />
         </activity>
         <activity
 
-            android:name=".AboutStAnthony"
+            android:name="com.grandilo.stanthonyapp.AboutStAnthony"
             android:label="@string/title_activity_about_st_anthony"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName="com.grandilo.stanthonyapp.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.grandilo.stanthony.MainActivity" />
+                android:value="com.grandilo.stanthonyapp.MainActivity" />
         </activity>
         <activity
-            android:name=".FeedBack"
+            android:name="com.grandilo.stanthonyapp.FeedBack"
             android:label="@string/title_activity_feed_back"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName="com.grandilo.stanthonyapp.MainActivity" >
         </activity>
         <activity
-            android:name=".About"
+            android:name="com.grandilo.stanthonyapp.About"
             android:label="@string/title_activity_about"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName="com.grandilo.stanthonyapp.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.grandilo.stanthony.MainActivity" />
+                android:value="com.grandilo.stanthonyapp.MainActivity" />
         </activity>
 
         <!--Banner Activity-->

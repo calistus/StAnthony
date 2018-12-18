@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.grandilo.stanthony;
+package com.grandilo.stanthonyapp;
 
 import java.util.Arrays;
 import java.util.List;

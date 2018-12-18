@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.grandilo.stanthony;
+package com.grandilo.stanthonyapp;
 
 import android.content.Context;
 import android.content.Intent;
@@ -33,7 +33,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
-import com.grandilo.stanthony.db.DBAdapter;
+import com.grandilo.stanthonyapp.db.DBAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

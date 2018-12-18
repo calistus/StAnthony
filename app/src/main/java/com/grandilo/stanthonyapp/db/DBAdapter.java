@@ -1,4 +1,4 @@
-package com.grandilo.stanthony.db;
+package com.grandilo.stanthonyapp.db;
 
 /**
  * Created by calistus on 10/5/2015.

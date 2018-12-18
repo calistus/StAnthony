@@ -1,4 +1,4 @@
-package com.grandilo.stanthony;
+package com.grandilo.stanthonyapp;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

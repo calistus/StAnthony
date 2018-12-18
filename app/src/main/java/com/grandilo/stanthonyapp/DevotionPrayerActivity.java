@@ -1,4 +1,4 @@
-package com.grandilo.stanthony;
+package com.grandilo.stanthonyapp;
 
 import android.content.Intent;
 import android.database.Cursor;
@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-import com.grandilo.stanthony.db.DBAdapter;
+import com.grandilo.stanthonyapp.db.DBAdapter;
 
 public class DevotionPrayerActivity extends AppCompatActivity {
 
