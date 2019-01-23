@@ -15,6 +15,7 @@ import android.widget.TextView;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.grandilo.stanthonyapp.db.DBAdapter;
+import com.grandilo.stanthonyapp.utils.AdsUtil;
 
 public class DevotionPrayerActivity extends AppCompatActivity {
 
@@ -37,6 +38,7 @@ public class DevotionPrayerActivity extends AppCompatActivity {
         textBody = (TextView) findViewById(R.id.text_body);
         textTitle.setText(getPrayerTitle());
         textBody.setText(getPrayerBody());
+
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

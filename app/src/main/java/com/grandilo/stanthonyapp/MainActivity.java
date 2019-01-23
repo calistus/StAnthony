@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        MobileAds.initialize(this, "ca-app-pub-9249562617917886~9341216058");
+        MobileAds.initialize(this, "ca-app-pub-9249562617917886~5785800067");
 
 
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
