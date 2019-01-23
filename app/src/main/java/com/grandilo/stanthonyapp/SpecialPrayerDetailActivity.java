@@ -65,10 +65,7 @@ public class SpecialPrayerDetailActivity extends AppCompatActivity {
 
         loadBackdrop();
 
-        AdView mAdView = (AdView) findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
-    }
+         }
 
     private void loadBackdrop() {
         final ImageView imageView = (ImageView) findViewById(R.id.backdrop);

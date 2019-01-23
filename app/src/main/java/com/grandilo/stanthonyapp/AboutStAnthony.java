@@ -22,10 +22,6 @@ public class AboutStAnthony extends AppCompatActivity {
         aboutWebView.getSettings().setBuiltInZoomControls(true);
         aboutWebView.getSettings().setJavaScriptEnabled(true);
         aboutWebView.loadUrl("http://www.catholic.org/saints/saint.php?saint_id=24");
-        AdView mAdView = (AdView) findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
-
     }
 
     public class myWebClient extends WebViewClient {

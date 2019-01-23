@@ -30,13 +30,10 @@ public class DevotionFragment extends Fragment {
             }
         });
 
-        AdView mAdView = (AdView) rootView.findViewById(R.id.adView);
         qouteTextView1 = (TextView)rootView.findViewById(R.id.qoute_1);
         qouteTextView2 = (TextView)rootView.findViewById(R.id.qoute_2);
         qouteTextView3 = (TextView)rootView.findViewById(R.id.qoute_3);
         qouteTextView4 = (TextView)rootView.findViewById(R.id.qoute_4);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
 
 
         return rootView;

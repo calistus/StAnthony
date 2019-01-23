@@ -42,10 +42,7 @@ public class About extends AppCompatActivity {
         collapsingToolbar.setTitle(getString(R.string.about_heading));
 
         loadBackdrop();
-        AdView mAdView = (AdView) findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
-    }
+         }
 
     private void loadBackdrop() {
         final ImageView imageView = (ImageView) findViewById(R.id.backdrop);
