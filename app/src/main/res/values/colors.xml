@@ -16,7 +16,12 @@
   -->
 
 <resources>
+
+    <color name="colorPrimary">#795548</color>
+    <color name="colorPrimaryDark">#5D4037</color>
+    <color name="colorAccent">#8D6E63</color>
     <color name="window_background">#FFF5F5F5</color>
+    <color name="colorWhite">#FFF5F5F5</color>
     <color name="background_clicked">#FFC25C</color>
     <color name="background_textview">#f93d59</color>
 </resources>

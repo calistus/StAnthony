@@ -2,15 +2,13 @@ package com.grandilo.stanthonyapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 
 
 public class DevotionFragment extends Fragment {
@@ -22,7 +20,7 @@ public class DevotionFragment extends Fragment {
         View rootView = (View) inflater.inflate(
                 R.layout.fragment_devotion, container, false);
 
-        FloatingActionButton fab = (FloatingActionButton) rootView.findViewById(R.id.fab);
+        Button fab = (Button) rootView.findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
