@@ -19,7 +19,7 @@
     <string name="checkin">Checking</string>
     <string name="menu_settings">About St. Anthony</string>
     <string name="feedback">If you notice any mistake on this app or want to contact the developer of this app, please do this via the following means\n\nEmail: icalistus@grandilo.com
-    \nPhone: +2348111875720
+    \nPhone: +2348111875720\n I am always available on Whatsapp
   </string>
     <string name="about">This app was developed by Grandilo Inc</string>
 
@@ -42,6 +42,8 @@
 
     <!--Admob String-->
     <string name="admob_interstitial_test">ca-app-pub-9249562617917886/3310172396</string>
+    <string name="admob_interstitial_special_prayers">ca-app-pub-9249562617917886/1292633665</string>
+    <string name="admob_interstitial_devotion">ca-app-pub-9249562617917886/5374736523</string>
 
 
     <string name="about_heading">About</string>

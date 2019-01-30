@@ -19,7 +19,6 @@
     android:layout_width="match_parent"
     android:layout_height="100dp"
     android:background="?attr/colorPrimaryDark"
-    android:padding="16dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
     android:orientation="vertical"
     android:gravity="bottom">
@@ -28,6 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/nav_bar_header"
+        android:scaleType="fitXY"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
 
 </LinearLayout>
