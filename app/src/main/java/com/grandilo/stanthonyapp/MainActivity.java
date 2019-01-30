@@ -34,6 +34,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.gms.ads.MobileAds;
 import com.google.firebase.analytics.FirebaseAnalytics;
@@ -72,11 +74,11 @@ public class MainActivity extends AppCompatActivity {
         String destPath = destDir + "prayers";
         File f = new File(destPath);
         if (!f.exists()) {
-//---make sure directory exists---
+            //---make sure directory exists---
             File directory = new File(destDir);
             directory.mkdirs();
-//---copy the db from the assets folder into
-// the databases folder---
+            //---copy the db from the assets folder into
+            // the databases folder---
             try {
                 CopyDB(getBaseContext().getAssets().open("prayers"),
                         new FileOutputStream(destPath));
@@ -107,10 +109,17 @@ public class MainActivity extends AppCompatActivity {
             setupViewPager(viewPager);
         }
 
-
+        Button fab = (Button) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, DevotionPrayerActivity.class));
+            }
+        });
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
     }
+
     public void CopyDB(InputStream inputStream, OutputStream outputStream)
             throws IOException {
 //---copy 1K bytes at a time---
@@ -153,37 +162,37 @@ public class MainActivity extends AppCompatActivity {
     private void setupDrawerContent(NavigationView navigationView) {
         navigationView.setNavigationItemSelectedListener(
                 new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(MenuItem menuItem) {
-                menuItem.setChecked(true);
-                mDrawerLayout.closeDrawers();
-                switch (menuItem.getItemId()) {
-                    case android.R.id.home:
-                        mDrawerLayout.openDrawer(GravityCompat.START);
-                        return true;
-                    case R.id.nav_reminder:
-                        // A date-time specified in milliseconds since the epoch.
-                        long startMillis=0;
-                        Uri.Builder builder = CalendarContract.CONTENT_URI.buildUpon();
-                        builder.appendPath("time");
-                        ContentUris.appendId(builder, startMillis);
-                        Intent intent = new Intent(Intent.ACTION_VIEW)
-                                .setData(builder.build());
-                        startActivity(intent);
-                        return true;
-                    case R.id.nav_feedback:
-                        startActivity(new Intent(MainActivity.this, FeedBack.class));
-                        return true;
-                    case R.id.nav_about:
-                        startActivity(new Intent(MainActivity.this, About.class));
-                        return true;
+                    @Override
+                    public boolean onNavigationItemSelected(MenuItem menuItem) {
+                        menuItem.setChecked(true);
+                        mDrawerLayout.closeDrawers();
+                        switch (menuItem.getItemId()) {
+                            case android.R.id.home:
+                                mDrawerLayout.openDrawer(GravityCompat.START);
+                                return true;
+                            case R.id.nav_reminder:
+                                // A date-time specified in milliseconds since the epoch.
+                                long startMillis = 0;
+                                Uri.Builder builder = CalendarContract.CONTENT_URI.buildUpon();
+                                builder.appendPath("time");
+                                ContentUris.appendId(builder, startMillis);
+                                Intent intent = new Intent(Intent.ACTION_VIEW)
+                                        .setData(builder.build());
+                                startActivity(intent);
+                                return true;
+                            case R.id.nav_feedback:
+                                startActivity(new Intent(MainActivity.this, FeedBack.class));
+                                return true;
+                            case R.id.nav_about:
+                                startActivity(new Intent(MainActivity.this, About.class));
+                                return true;
 
 
-                }
+                        }
 
-                return true;
-            }
-        });
+                        return true;
+                    }
+                });
     }
 
     static class Adapter extends FragmentPagerAdapter {

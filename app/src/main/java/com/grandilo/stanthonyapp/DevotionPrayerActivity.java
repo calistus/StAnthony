@@ -1,7 +1,10 @@
 package com.grandilo.stanthonyapp;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
+import android.net.Uri;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -10,10 +13,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 import com.grandilo.stanthonyapp.db.DBAdapter;
 import com.grandilo.stanthonyapp.utils.AdsUtil;
 
@@ -32,8 +34,9 @@ public class DevotionPrayerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_devotion_prayer);
         db = new DBAdapter(this);
-        FloatingActionButton nextButton = (FloatingActionButton) findViewById(R.id.nextButton);
-        FloatingActionButton previousButton = (FloatingActionButton) findViewById(R.id.previousButton);
+        Button nextButton = (Button) findViewById(R.id.nextButton);
+        Button previousButton = (Button) findViewById(R.id.previousButton);
+        Button reportButton = (Button) findViewById(R.id.report);
         textTitle = (TextView) findViewById(R.id.text_title);
         textBody = (TextView) findViewById(R.id.text_body);
         textTitle.setText(getPrayerTitle());
@@ -56,7 +59,34 @@ public class DevotionPrayerActivity extends AppCompatActivity {
                 textBody.setText(getPrayerBody());
             }
         });
+        reportButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        switch (which){
+                            case DialogInterface.BUTTON_POSITIVE:
+                                String url = "https://api.whatsapp.com/send?phone=+2348111875720";
+                                Intent i = new Intent(Intent.ACTION_VIEW);
+                                i.setData(Uri.parse(url));
+                                startActivity(i);
+                                break;
 
+                            case DialogInterface.BUTTON_NEGATIVE:
+
+                                break;
+                        }
+                    }
+                };
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(DevotionPrayerActivity.this);
+                builder.setTitle("Make Correction");
+                builder.setMessage("You will be redirected to WhatsApp to report this directly to the developer").setPositiveButton("Continue", dialogClickListener)
+                        .setNegativeButton("Cancel", dialogClickListener).show();
+
+            }
+        });
 
         Intent intent = getIntent();
         final String cheeseName = intent.getStringExtra(EXTRA_NAME);

@@ -20,18 +20,16 @@ public class DevotionFragment extends Fragment {
         View rootView = (View) inflater.inflate(
                 R.layout.fragment_devotion, container, false);
 
-        Button fab = (Button) rootView.findViewById(R.id.fab);
+        /*Button fab = (Button) rootView.findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getActivity(), DevotionPrayerActivity.class));
             }
-        });
+        });*/
 
         qouteTextView1 = (TextView)rootView.findViewById(R.id.qoute_1);
         qouteTextView2 = (TextView)rootView.findViewById(R.id.qoute_2);
-        qouteTextView3 = (TextView)rootView.findViewById(R.id.qoute_3);
-        qouteTextView4 = (TextView)rootView.findViewById(R.id.qoute_4);
 
 
         return rootView;

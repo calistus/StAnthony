@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright (C) 2015 The Android Open Source Project
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,22 +17,22 @@
 <resources>
     <string name="app_name">Guild of St. Anthony</string>
     <string name="checkin">Checking</string>
-  <string name="menu_settings">About St. Anthony</string>
-  <string name="feedback">If you notice any mistake on this app or want to contact the developer of this app, please do this via the following means\n\nEmail: icalistus@grandilo.com
-    \nPhone: +2347039056183
+    <string name="menu_settings">About St. Anthony</string>
+    <string name="feedback">If you notice any mistake on this app or want to contact the developer of this app, please do this via the following means\n\nEmail: icalistus@grandilo.com
+    \nPhone: +2348111875720
   </string>
-  <string name="about">This app was developed by Grandilo Inc</string>
+    <string name="about">This app was developed by Grandilo Inc</string>
 
-<!-- Intro Qoutes-->
-  <string name="hello_blank_fragment">Hello blank fragment</string>
-  <string name="quote1">Mark11:22-26</string>
-  <string name="quote_text1">“Have faith God… whatever you ask in prayer, believe that you have received it, and it will be yours. And whenever you stand praying forgive, if you have anything against any one’ so that your father also who is in heaven may forgive you trespasses."</string>
-  <string name="quote2">Pro.35.6</string>
-  <string name="quote_text2">"Trust in the lord with all your heart, and do not rely on your own understating. In all your ways acknowledge him and He will make straight your paths."</string>
-  <string name="quote3">Jas 5:6</string>
-  <string name="quote_text3">"Confess your sins to one another, and pray for one another, that you may be healed. The prayer of a righteous man has great over in it is effects"</string>
-  <string name="quote4">Mt.5:44</string>
-  <string name="quote_text4">"love your enemies, bless them that curse your, do good to them that hate you, and pray for them which despitefully use you, and persecute you"</string>
+    <!-- Intro Qoutes-->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="quote1">Mark11:22-26</string>
+    <string name="quote_text1">“Have faith God… whatever you ask in prayer, believe that you have received it, and it will be yours. And whenever you stand praying forgive, if you have anything against any one’ so that your father also who is in heaven may forgive you trespasses."</string>
+    <string name="quote2">About St Anthony and the devotion </string>
+    <string name="quote_text2">"St. Anthony is a companion in daily life. He not only bestows graces and favours whenever one calls him in times of need. He is a big brother, a confidant who is always present and available whenever we are assailed by problems, be they big or small. Devotees ask him to help those who have lost their way, to console the suffering, to assist the poor and the forsaken.\nAs well as through personal prayer, devotion to Saint Anthony has manifested itself over the centuries in enduring ways."</string>
+    <string name="quote3">Jas 5:6</string>
+    <string name="quote_text3">"Confess your sins to one another, and pray for one another, that you may be healed. The prayer of a righteous man has great over in it is effects"</string>
+    <string name="quote4">Mt.5:44</string>
+    <string name="quote_text4">"love your enemies, bless them that curse your, do good to them that hate you, and pray for them which despitefully use you, and persecute you"</string>
     <string name="title_activity_devotion_prayer">DevotionPrayer</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -42,14 +41,10 @@
     <string name="title_activity_about">About</string>
 
     <!--Admob String-->
-  <string name="home_unit_id">ca-app-pub-9249562617917886/1817949255</string>
-  <string name="devotion_unit_id">ca-app-pub-9249562617917886/4771415659</string>
-  <string name="special_prayer_unit_id">ca-app-pub-9249562617917886/6248148858</string>
-  <string name="special_prayer_detail_unit_id"> ca-app-pub-9249562617917886/7724882056</string>
-  <string name="feedback_unit_id"> ca-app-pub-9249562617917886/3155081651</string>
-  <string name="about_unit_id"> ca-app-pub-9249562617917886/6108548055</string>
-  <string name="about_stAnthony_unit_id"> ca-app-pub-9249562617917886/9201615257</string>
-  <string name="about_heading">About</string>
+    <string name="admob_interstitial_test">ca-app-pub-9249562617917886/3310172396</string>
+
+
+    <string name="about_heading">About</string>
 
 
 </resources>

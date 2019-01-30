@@ -153,7 +153,7 @@ public class SpecialPrayersListFragment extends Fragment {
                 public void onClick(View v) {
                     Context context = v.getContext();
                     Intent intent = new Intent(context, SpecialPrayerDetailActivity.class);
-                    intent.putExtra(SpecialPrayerDetailActivity.EXTRA_NAME, holder.mBoundString);
+                    intent.putExtra(SpecialPrayerDetailActivity.Companion.getEXTRA_NAME(), holder.mBoundString);
                     itemPosition = position;
                     context.startActivity(intent);
                 }
