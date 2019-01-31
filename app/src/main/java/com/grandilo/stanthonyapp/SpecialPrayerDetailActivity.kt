@@ -82,8 +82,8 @@ class SpecialPrayerDetailActivity : AppCompatActivity() {
         loadBackdrop()
 
         AdsUtil.initializeAdmobInterstitial(this)
-        AdsUtil.mInterstitialAd.adUnitId = getString(R.string.admob_interstitial_test)
-        AdsUtil.mInterstitialAd.loadAd(AdRequest.Builder().addTestDevice("B800937597E390049516A123DF4DF0E3").build())
+        AdsUtil.mInterstitialAd.adUnitId = getString(R.string.admob_interstitial_special_prayers)
+        AdsUtil.mInterstitialAd.loadAd(AdRequest.Builder().build())
 
 
     }

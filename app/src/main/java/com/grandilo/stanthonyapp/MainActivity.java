@@ -1,19 +1,3 @@
-/*
- * Copyright (C) 2015 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package com.grandilo.stanthonyapp;
 
 import android.content.ContentUris;
@@ -158,6 +142,15 @@ public class MainActivity extends AppCompatActivity {
         adapter.addFragment(new SpecialPrayersListFragment(), "Special Prayers");
         viewPager.setAdapter(adapter);
     }
+    private void shareWithFriends() {
+        final String appLink = "https://play.google.com/store/apps/details?id=com.grandilo.stanthonyapp";
+        Intent shareIntent = new Intent();
+        shareIntent.setAction(Intent.ACTION_SEND);
+        shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Guild of St. Anthony App");
+        shareIntent.putExtra(Intent.EXTRA_TEXT, String.format(getString(R.string.share_message), appLink));
+        shareIntent.setType("text/link");
+        startActivity(Intent.createChooser(shareIntent, "Share using:"));
+    }
 
     private void setupDrawerContent(NavigationView navigationView) {
         navigationView.setNavigationItemSelectedListener(
@@ -167,8 +160,11 @@ public class MainActivity extends AppCompatActivity {
                         menuItem.setChecked(true);
                         mDrawerLayout.closeDrawers();
                         switch (menuItem.getItemId()) {
-                            case android.R.id.home:
-                                mDrawerLayout.openDrawer(GravityCompat.START);
+                            case R.id.nav_invite:
+                                shareWithFriends();
+                                return true;
+                            case R.id.nav_update:
+                                try{startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" +getPackageName())));}catch(Exception e){e.printStackTrace();}
                                 return true;
                             case R.id.nav_reminder:
                                 // A date-time specified in milliseconds since the epoch.

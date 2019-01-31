@@ -62,8 +62,8 @@ class DevotionPrayerActivity : AppCompatActivity() {
         textTitle.text = prayerTitle
         textBody.text = prayerBody
         AdsUtil.initializeAdmobInterstitial(this)
-        AdsUtil.mInterstitialAd.adUnitId = getString(R.string.admob_interstitial_test)
-        AdsUtil.mInterstitialAd.loadAd(AdRequest.Builder().addTestDevice("B800937597E390049516A123DF4DF0E3").build())
+        AdsUtil.mInterstitialAd.adUnitId = getString(R.string.admob_interstitial_devotion)
+        AdsUtil.mInterstitialAd.loadAd(AdRequest.Builder().build())
         setAdListener()
         var adCounter = 1
         nextButton.setOnClickListener {
@@ -131,11 +131,11 @@ class DevotionPrayerActivity : AppCompatActivity() {
             }
 
             override fun onAdLeftApplication() {
-                AdsUtil.mInterstitialAd.loadAd(AdRequest.Builder().addTestDevice("B800937597E390049516A123DF4DF0E3").build())
+                AdsUtil.mInterstitialAd.loadAd(AdRequest.Builder().build())
             }
 
             override fun onAdClosed() {
-                AdsUtil.mInterstitialAd.loadAd(AdRequest.Builder().addTestDevice("B800937597E390049516A123DF4DF0E3").build())
+                AdsUtil.mInterstitialAd.loadAd(AdRequest.Builder().build())
             }
         }    }
 

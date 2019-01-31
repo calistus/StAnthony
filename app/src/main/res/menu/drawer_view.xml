@@ -17,20 +17,26 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
+
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_dashboard"
-            android:title="Home" />
+            android:id="@+id/nav_invite"
+            android:icon="@drawable/baseline_share_black_18dp"
+            android:title="Share with Friend" />
         <item
             android:id="@+id/nav_reminder"
             android:icon="@drawable/ic_event"
             android:title="reminder" />
+        <item
+            android:id="@+id/nav_update"
+            android:icon="@drawable/baseline_archive_black_18dp"
+            android:title="Check for update" />
         <item
             android:id="@+id/nav_feedback"
             android:icon="@drawable/ic_discuss"
             android:title="Feedback" />
         <item
             android:id="@+id/nav_about"
+            android:icon="@drawable/baseline_contact_support_black_18dp"
             android:title="About" />
     </group>
 
